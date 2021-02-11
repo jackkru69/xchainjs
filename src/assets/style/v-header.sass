@@ -1,0 +1,57 @@
+.v-header
+  height: 140px
+  display: flex
+  justify-content: space-between
+  box-sizing: border-box
+  border-bottom: 1px solid #DDE1E2
+  flex-direction: column
+  &__row
+    display: flex
+    align-items: center
+    height: 70px
+  &__col
+    display: flex
+    flex-direction: column
+  &__wrapper
+    display: flex
+    justify-content: space-between
+  &__navigation
+    margin-left: 16px
+    display: none
+    flex-direction: column
+    justify-content: space-between
+    cursor: default
+    &._mobile
+      display: block
+  &__path
+    font-family: PT Root UI
+    font-weight: 500
+    font-size: 12px
+    line-height: 16px
+    text-align: right
+    letter-spacing: 0.4px
+    color: #96A1A7
+    &-img
+      transform: rotate(-90deg)
+      margin-bottom: 1px
+      margin-left: 4px
+      margin-right: 4px
+  &__title
+    font-family: PT Root UI
+    font-size: 18px
+    line-height: 24px
+    letter-spacing: 0.5px
+    color: #000000
+    font-weight: 700
+  @media screen and (min-width: 768px)
+    height: 64px
+    &__navigation
+      display: flex
+      &._mobile
+        display: none
+    &__row
+      height: auto
+      &._mobile
+        display: none
+    &__wrapper
+      height: 100%
